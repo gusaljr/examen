@@ -38,14 +38,14 @@ elementFormDefault="qualified">
 				<xsd:complexType>
 					<xsd:sequence>
 							<xsd:element name="nom" type="xsd:string"/>
-							<xs:element name="telefon">
-									<xs:simpleType>
-										<xs:restriction base="xs:integer">
-											<xs:minInclusive value="971230000"/>
-											<xs:maxInclusive value="971239999"/>
-										</xs:restriction>
-									</xs:simpleType>
-								</xs:element>
+							<xsd:element name="telefon">
+									<xsd:simpleType>
+										<xsd:restriction base="xsd:integer">
+											<xsd:minInclusive value="971230000"/>
+											<xsd:maxInclusive value="971239999"/>
+										</xsd:restriction>
+									</xsd:simpleType>
+								</xsd:element>
 							<xsd:element name="email" type="xsd:emailAddress"/>
 							<xsd:element name="A" type="emailAddress"/> 	
 							<xsd:element name="tipusClient" type="xsd:string"/>
@@ -56,18 +56,18 @@ elementFormDefault="qualified">
 											<xsd:element name="dataInici" type="xsd:string"/>
 											<xsd:element name="dataFi" type="xsd:string"/>
 										</xsd:sequence>
-										<xsd:attribute name="codi" type="xsd:string" />
+										<xsd:attribute name="codi" type="xsd:string"/>
 									</xsd:complexType>
 								</xsd:element>
 						</xsd:sequence>
-						<xsd:attribute name="codi"type="xsd:string" />
-						<xs:element name="car">
-							<xs:simpleType>
-								<xs:restriction base="Sr">
-									<xs:enumeration value="Sra"/>
-								</xs:restriction>
-							</xs:simpleType>
-						</xs:element>
+						<xsd:attribute name="codi" type="xsd:string" />
+						<xsd:element name="car">
+							<xsd:simpleType>
+								<xsd:restriction base="Sr">
+									<xsd:enumeration value="Sra"/>
+								</xsd:restriction>
+							</xsd:simpleType>
+						</xsd:element>
 					</xsd:complexType>
 			<xsd:simpleType name="emailAddress"> 
 				<xsd:restriction base="xsd:string"> 
