@@ -12,12 +12,12 @@ elementFormDefault="qualified">
 						<xsd:element name="model" type="xsd:string"/>
 						<xsd:element name="equipacio">
 							<xsd:complexType>
-								<xsd:all>
+								<xsd:sequence>
 								 <xsd:element name="climatitzador" type="xsd:string"  minOccurs="0" maxOccurs="unbounded"/>
-									<xsd:element name="airbagsLaterals" type="Siono"/>
-									<xsd:element name="automatic" type="Siono"/>
+									<xsd:element name="airbagsLaterals" type="i:Siono" use="required"/>
+									<xsd:element name="automatic" type="i:Siono" use="required"/>
 								 <xsd:element name="cadiraNinPetit" type="xsd:string"  minOccurs="0" maxOccurs="unbounded"/>
-								</xsd:all>
+								</xsd:sequence>
 								<xsd:simpleType name="Siono">
 									<xsd:restriction base="xsd:string">
 										<xsd:enumeration value="Si" />
