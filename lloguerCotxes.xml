@@ -37,12 +37,12 @@ xsi:schemaLocation="http://www.iessonferrer.net/jgonzalez/inmobiliaria lloguerCo
 			<dataFi>2016-03-20</dataFi>
 		</lloguer>
 		<lloguer>
-			<cotxe> codi="5258DRL"</cotxe>
+			<cotxe>5258DRL</cotxe>
 			<dataInici>2016-04-12</dataInici>
 			<dataFi>2016-04-20</dataFi>
 		</lloguer>
 		<lloguer>
-			<cotxe>5258DRL</cotxe>
+			<cotxe1 codi= "5258DRL"/>
 			<dataInici>2016-05-12</dataInici>
 			<dataFi>2016-05-20</dataFi>
 		</lloguer>
@@ -53,7 +53,7 @@ xsi:schemaLocation="http://www.iessonferrer.net/jgonzalez/inmobiliaria lloguerCo
 			<email>psoler@gmail.com</email>
 			<tipusClient>Ocasional</tipusClient>
 		<lloguer>
-			<cotxe>4256DRL</cotxe>
+			<cotxe1 codi="4256DRL"/>
 			<dataInici>2015-07-14</dataInici>
 			<dataFi>2015-07-21</dataFi>
 		</lloguer>
