@@ -46,7 +46,8 @@ elementFormDefault="qualified">
 										</xs:restriction>
 									</xs:simpleType>
 								</xs:element>
-							<xsd:element name="email" type="xsd:string"/>
+							<xsd:element name="email" type="xsd:emailAddress"/>
+							<xsd:element name="A" type="emailAddress"/> 	
 							<xsd:element name="tipusClient" type="xsd:string"/>
 								<xsd:element name="lloguer">
 									<xsd:complexType>
@@ -67,8 +68,13 @@ elementFormDefault="qualified">
 								</xs:restriction>
 							</xs:simpleType>
 						</xs:element>
-						</xsd:complexType>
-				</xsd:element>
+					</xsd:complexType>
+			<xsd:simpleType name="emailAddress"> 
+				<xsd:restriction base="xsd:string"> 
+					<xsd:pattern value="[^@]+@[^\.]+\..+"/> 
+				</xsd:restriction> 
+			</xsd:simpleType> 
+		</xsd:element>
 		<xsd:key name="cotxe1key">
 		<xsd:selector xpath="co:cotxe1"/>
 		<xsd:field xpath="@codi"/>
